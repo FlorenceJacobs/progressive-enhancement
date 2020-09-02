@@ -1,0 +1,157 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+    outline: 0;
+}
+
+body {
+    width: 80%;
+    margin: 0 10% 0 10%;
+    background: linear-gradient(90deg, rgb(156, 181, 203), rgb(230, 237, 247));
+    background-image: url("https://images.pexels.com/photos/19670/pexels-photo.jpg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: bottom right;
+}
+header p {
+    background: #fceb79; 
+}
+
+section {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: #4d4d4d;
+    line-height: 2em;
+}
+h1, h2 {
+    font-family: 'Montserrat Alternates', sans-serif;
+    line-height: 3em;
+}
+
+#rocher p:first-child {
+    font-weight: bold;
+}
+                /*citations*/
+
+blockquote {
+    width: 50%;
+    margin: 0% 25% 0% 25%;
+    font-size: 160%;
+    font-style: italic;
+    color: #8f9294;
+    border-left: 3px solid #ba4d3a;
+    padding-left: 30px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+q {
+    font-style: italic;
+}
+
+q.bleu {
+    border-left: 3px solid #3c68ab;
+    padding-left: 3px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+q.vert {
+    border-left: 3px solid #0d8f86;
+    padding-left: 3px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.bien {
+    text-transform: capitalize;
+    color:green
+}
+
+.mal {
+    text-transform: capitalize;
+    color : red
+}
+
+                            /*Liste*/
+
+ul > li {
+    margin: .5em 0;
+    line-height: 2;
+  }
+  
+.gensbien {
+    padding-right: 10%;
+    background-image:url('img/bien_pouce_leve.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 29% 71%;
+}
+.gensmal {
+    padding-right: 50%;
+    background-image:url('img/mal_pouce_leve.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 30% 70%;
+}
+.chat {
+    padding-right: 50%;
+    background-image:url('img/chat.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 34% 66%;
+}
+                              /*liens*/
+a {
+    outline: none;
+    text-decoration: none;
+}
+
+a:link {
+    color: #40a3b3;
+    font-weight: bold;
+}
+
+a:visited {
+    color: #40a3b3;
+}
+
+a:focus {
+    color: ##40a3b3;
+    font-weight: bold;
+}
+
+a:hover {
+    color: ##40a3b3;
+    font-weight: bold;
+    text-decoration: underline dotted;
+}
+
+a:active {
+    color: #40a3b3;
+    font-weight: bold;
+}
+
+                             /*tableau*/
+tr:nth-child(odd)
+{
+  background-color: grey;
+}
+
+tr:nth-child(even)
+{
+  background-color: white;
+}
+                             /*Image*/
+img {
+    float: left;
+    margin: 0 10px 0 0;
+}
+
+figcaption {
+    text-align:"bottom";
+    caption-side: "right";
+}
