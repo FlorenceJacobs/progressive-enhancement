@@ -1,0 +1,110 @@
+/******************CSS RESET*****************/
+html, body {
+    margin: 0;
+    padding: 0;
+    }
+/******************BODY*****************/
+body {
+    background-color: white; 
+    font-family:'PT Sans', sans-serif; 
+    font-size: 1rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+h1 {
+    font-size: 200%;
+}
+
+h2 {
+    font-size: 150%;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+img {
+    width: 20rem;
+}
+/******************NAV*****************/
+nav {
+    background-color: #4f3130;
+    color: white;
+    height: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+nav li {
+    display:inline-block;
+    list-style: none;
+    border-right: 1px solid white;
+    padding: 0.5rem;
+    padding-bottom: 0.8rem;
+}
+/******************GRID*****************/
+.wrapper {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-auto-rows: minmax(100px, auto);
+    grid-gap: 1rem;
+    color: white;
+}
+
+.box0 {
+    grid-area: 1 / 1 / 2 / 5;
+    background-color: #125D7F;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+.box1 {
+    grid-area: 2 / 1 / 3 / 3;
+    background-color: #3cbe9e;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+.box2 {
+    grid-area: 2 / 3 / 3 / 5;
+    background-color: #F85E00;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+.box3 {
+    grid-area: 3 / 1 / 4 / 2;
+    background-color: white;
+}
+
+.box4 {
+    grid-area: 3 / 2 / 4 / 5;
+    background-color: #4f3130;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+.box5 {
+    grid-area: 4 / 1 / 5 / 3;
+    background-color: #125D7F;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+.box6 {
+    grid-area: 4 / 3 / 5 / 5;
+    background-color: #3cbe9e;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+.box7 {
+    grid-area: 2 / 2 / 3 / 5;
+    background-color: #3cbe9e;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Markdown Syntax</title>
+    <link href="markdown_style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="whats_is_markdown.html"></a>What is markdown</a></li>
+                <li><a href="markdown_origin.html"></a>Markdown Origin</a></li>
+                <li><a href="offbeat_design.html"></a>Offbeat Design</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <section>
+                <div class="wrapper">
+                    <aside>
+                        <div class="box3">
+                            <img src="https://github.com/anjessen/exercice-markdown/raw/master/markdownstatic.png" alt="Markdown">
+                            <p>&nbsp;</p>
+                            <img src="https://github.com/anjessen/exercice-markdown/raw/master/markdownstatic.png" alt="Markdown">
+                        </div>
+                    </aside>
+                <div class="box0">
+                <h1>Syntaxe Markdown</h1>
+                </div>
+                <div class="box1">
+                    <h2><i class="fas fa-arrow-right"></i> Formatage</h2>
+                    <p>Pour mettre du <code>_texte en emphase_</code>, ce qui produit une mise en italique dans un navigateur courant :</p>    
+                    <p><i>Ceci est une phrase en italic</i></p>
+                    <p>Pour mettre du texte en <code>__grande emphase__</code>, ce qui produit une mise en gras dans un navigateur courant :</p>
+                    <p><b>Ceci est une phrase en gras</b></p>
+                    <p>Pour mettre du code dans le texte :</p>
+                    <p><code>Mon texte ``code`` fin de mon texte</code></p>
+                    <p>Mon texte <code>code</code> fin de mon texte</p>
+                    <p>Ou sur plusieurs lignes avec coloration syntaxique selon le langage mis en préfixe :</p>
+ 
+<pre><code>
+```css
+.class p {
+    color: green;
+    font-family: arial;
+}
+```
+</code></pre>
+                    <p>Mon code en couleurs</br>
+                    sur plusieurs lignes</p>
+
+                    <p>Pour un paragraphe de code, mettre quatre espaces (ou une tabulation) devant:</p>
+<pre><code>
+    Première ligne de code
+    Deuxième ligne
+    Troisième ligne
+</code></pre>
+                    <p>Comme dans les courriels, il est possible de <code>> faire des citations</code> :</p>
+                    <blockquote>Ce texte apparaîtra dans un élément HTML.</blockquote>
+                    <p>Pour faire un nouveau paragraphe, sauter deux lignes, c'est à dire laisser une ligne vide entre les deux paragraphes. Sauter une seule ligne dans le texte d'origine n'aura aucun effet à l'affichage (l'affichage sera en continu).</p>
+<pre><code>    
+Premier paragraphe
+
+Deuxième paragraphe
+
+Troisième paragraphe
+</code></pre>
+                    </div>
+                    <div class="box2">
+                    <h2><i class="fas fa-arrow-right"></i> Listes</h2>
+                    <p>Sauter une ligne avant le début de la liste.</p>
+                    <p>Pour créer une liste non ordonnée :</p>
+<pre><code>
+- Pommes
+- Poires
+    - Sous élément avec une tabulation devant.
+</code></pre>
+                    <ul>
+                        <li>Pommes</li>
+                        <li>Poires</li>
+                        <ul>
+                            <li>Sous élément avec une tabulation devant.</li>
+                        </ul>
+                    </ul>
+                    <p>Et une liste ordonnée :</p>
+<pre><code>
+1. mon premier
+2. mon deuxième
+    1. mon sous-element
+3. mon troisième
+</code></pre>
+                    <ol>
+                        <li>mon premier</li>
+                        <li>mon deuxième</li>
+                        <ol>
+                            <li>mon sous-element</li>
+                        </ol>
+                        <li>mon troisième</li>
+                    </ol>
+                    <p>Et une liste en mode case à cocher</p>
+<pre><code>
+- [ ] Case non cochée
+- [x] Case cochée
+</code></pre>
+                    <p>! Mise en forme : CSS<br/>
+                    [ ] Case non cochée<br/>
+                    [x] Case cochée</p>
+                    </div>
+                    <div class="box4">
+                    <h2><i class="fas fa-arrow-right"></i> Titres</h2>
+                    <p>Les titres sont créés avec un certain nombre de # avant le titre, qui correspondent au niveau de titre souhaité.</p>
+<pre><code>
+# un titre de premier niveau
+## un titre de deuxième niveau
+#### un titre de quatrième niveau
+</code></pre>
+                    <section>
+                    <h1>un titre de premier niveau</h1>
+                    <h2>un titre de deuxième niveau</h2>
+                    <h3>un titre de quatrième niveau</h3> 
+                    </section>
+                    <p>Pour les deux premiers niveaux de titre, il est également possible de souligner le titre avec des = ou des - (leur nombre réel importe peu, mais il doit être supérieur à 2).</p>
+<pre><code>
+Titre de niveau 1
+=====================
+Titre de niveau 2
+-------------------
+</code></pre>
+                    </div>
+                    <div class="box5">
+                    <h2><i class="fas fa-arrow-right"></i> Tableaux</h2>
+                    <p>Pour créer des tableaux:</p>
+<pre><code>  
+|        |     Titre 2     |         |
+| :------------ | :-------------: | -------------: |
+| Colonne       |     Colonne     |        Colonne |
+| Alignée à     |   Alignée au    |      Alignée à |
+| Gauche        |     Centre      |         Droite |
+</code></pre>
+                    <table>
+                        <tr>
+                            <th>Titre 1</th>
+                            <th>Titre 2</th>
+                            <th>Titre 3</th>
+                        </tr>
+                        <tr>
+                            <td>Colonne alignée à gauche</td>
+                            <td>Colonne alignée au centre</td>
+                            <td>Colonne alignée à droite</td>
+                        </tr>
+                    </table>
+                    </div>
+                    <div class="box6">
+                    <h2><i class="fas fa-arrow-right"></i> Liens</h2>
+                    <p>Pour créer des liens:</p>
+                    <p><code>[texte du lien](url_du_lien "texte pour le titre, facultatif")</code></p>
+                    <p><a href="#">Lien vers une page</a></p>
+                    <h2><i class="fas fa-arrow-right"></i> Images</h2>
+                    <p>Pour afficher une image:</p>
+                    <p><code>![Texte alternatif](url_de_l'image "texte pour le titre, facultatif")</code></p>
+                    </div>
+            </section>
+        </article>
+    </main>
+</body>
+</html>
