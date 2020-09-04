@@ -1,7 +1,7 @@
 # progressive-enhancement
 HTML - CSS learning
 
-This is the result of 4 days working on HTML and CSS codes.
+This is the result of my first week working on HTML and CSS codes.
 
 I had never heard about _flex, float or inline-block_ before !
 
